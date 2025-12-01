@@ -12,7 +12,7 @@ import {
   Globe, 
   Send,
   Download,
-  Layout
+  Layout, 
 } from 'lucide-react';
 
 /**
@@ -117,13 +117,20 @@ const TRANSLATIONS = {
           role: "Medior Front-end Developer",
           company: "Edilportale S.p.A.",
           period: "2023 - Presente",
-          desc: "Guida dell'architettura frontend usando Vue.js e TypeScript. Migliorate le performance del sito del 40%."
+          desc: `
+          • Refactoring componenti da JavaScript/jQuery/Razor a Vue.js con TypeScript
+          • Sviluppo progetto micro-frontend per testing componenti Vue
+          • Riscrittura componenti cruciali in Vue.js e VueX per E-Commerce
+          • Aggiornamento framework CSS da Bootstrap 3 a 5`
         },
         {
           role: "Front-end Developer",
           company: "Exprivia S.p.A.",
           period: "2021 - 2023",
-          desc: "Sviluppo di SPA complesse utilizzando Angular. Collaborazione con designer UX/UI per interfacce responsive."
+          desc: `• Sviluppo pagine web per Plenitude usando Angular e TypeScript
+• Manutenzione e aggiornamento sito Mooney S.p.A. da Angular 8 a 15
+• Migrazione app mobile Mooney da Ionic 3 a 6
+• Sviluppo componenti con GSAP e ScrollTrigger per ENI Plenitude`
         }
       ]
     },
@@ -180,7 +187,7 @@ const ExperienceItem = ({ role, company, period, desc, isLast }: { role: string,
 );
 
 export default function Home() {
-  const [lang, setLang] = useState<'en' | 'it'>('en');
+  const [lang, setLang] = useState<'en' | 'it'>('it');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [formStatus, setFormStatus] = useState<'idle' | 'success'>('idle');
@@ -356,25 +363,25 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                 <SkillCard 
                   icon={Layers} 
                   title="Vue.js / Nuxt" 
-                  level="Advanced - 3 Years" 
+                  level="Intermediate - 3 Years" 
                   color="bg-green-500" 
                 />
                 <SkillCard 
                   icon={Layout} 
                   title="Angular" 
-                  level="Advanced - 2 Years" 
+                  level="Intermediate - 2 Years" 
                   color="bg-red-500" 
                 />
                 <SkillCard 
                   icon={Code2} 
                   title="React / Next.js" 
-                  level="Intermediate" 
+                  level="Beginner" 
                   color="bg-blue-500" 
                 />
                 <SkillCard 
                   icon={Zap} 
                   title="Tailwind & TS" 
-                  level="Expert" 
+                  level="Intermediate" 
                   color="bg-yellow-500" 
                 />
               </div>
