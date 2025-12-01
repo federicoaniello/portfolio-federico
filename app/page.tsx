@@ -201,10 +201,10 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     
     const myForm = e.currentTarget;
     const formData = new FormData(myForm);
-
     const body = new URLSearchParams(formData as any).toString();
 
-    fetch("/", {
+    // Modifica qui: invia la richiesta al file statico creato in public
+    fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: body,
@@ -212,11 +212,11 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       .then(() => {
         setFormStatus('success');
         setTimeout(() => setFormStatus('idle'), 5000);
-        myForm.reset(); // Opzionale: pulisce i campi dopo l'invio
+        myForm.reset();
       })
       .catch((error) => {
-        console.error("Errore di invio:", error);
-        alert("Si è verificato un errore nell'invio del messaggio.");
+        console.error("Errore:", error);
+        alert("Errore nell'invio del messaggio.");
       });
   };
 
