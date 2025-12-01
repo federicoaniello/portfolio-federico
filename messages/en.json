@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "about": "About",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Hi, I'm Federico Aniello",
+    "subtitle": "Front-end Developer",
+    "description": "I build beautiful and functional web experiences. With 4+ years in the field, I specialize in creating modern, responsive, and user-centric web applications.",
+    "contact_button": "Get in Touch"
+  },
+  "About": {
+    "title": "About Me",
+    "paragraph1": "I am a passionate front-end developer with a strong focus on creating elegant and effective user interfaces. My journey in web development started over 4 years ago, and since then, I've been dedicated to learning and mastering modern web technologies.",
+    "paragraph2": "I have extensive experience with component-based frameworks, including 3 years working with Vue and 2 years with Angular. This background has given me a deep understanding of state management, component architecture, and building scalable applications.",
+    "paragraph3": "I thrive on solving complex problems and turning ideas into reality. I'm always eager to take on new challenges and collaborate with teams to build amazing products."
+  },
+  "Skills": {
+    "title": "My Skills"
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "description": "Have a project in mind or just want to say hi? Fill out the form below and I'll get back to you as soon as possible.",
+    "name_placeholder": "Your Name",
+    "email_placeholder": "Your Email",
+    "message_placeholder": "Your Message",
+    "submit_button": "Send Message",
+    "success_message": "Message sent successfully!",
+    "error_message": "Something went wrong. Please try again."
+  },
+  "Footer": {
+    "copyright": "All rights reserved."
+  }
+}

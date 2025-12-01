@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "about": "Chi Sono",
+    "skills": "Competenze",
+    "contact": "Contatti"
+  },
+  "Hero": {
+    "title": "Ciao, sono Federico Aniello",
+    "subtitle": "Sviluppatore Front-end",
+    "description": "Costruisco esperienze web funzionali e di grande impatto visivo. Con oltre 4 anni nel settore, sono specializzato nella creazione di applicazioni web moderne, responsive e incentrate sull'utente.",
+    "contact_button": "Contattami"
+  },
+  "About": {
+    "title": "Chi Sono",
+    "paragraph1": "Sono uno sviluppatore front-end appassionato con un forte focus sulla creazione di interfacce utente eleganti ed efficaci. Il mio percorso nello sviluppo web è iniziato più di 4 anni fa e da allora mi sono dedicato all'apprendimento e alla padronanza delle moderne tecnologie web.",
+    "paragraph2": "Ho una vasta esperienza con i framework basati su componenti, inclusi 3 anni di lavoro con Vue e 2 anni con Angular. Questo background mi ha permesso di acquisire una profonda comprensione della gestione dello stato, dell'architettura a componenti e della creazione di applicazioni scalabili.",
+    "paragraph3": "Mi piace risolvere problemi complessi e trasformare le idee in realtà. Sono sempre desideroso di affrontare nuove sfide e collaborare con i team per costruire prodotti straordinari."
+  },
+  "Skills": {
+    "title": "Le Mie Competenze"
+  },
+  "Contact": {
+    "title": "Contattami",
+    "description": "Hai un progetto in mente o vuoi semplicemente salutarmi? Compila il modulo qui sotto e ti risponderò il prima possibile.",
+    "name_placeholder": "Il Tuo Nome",
+    "email_placeholder": "La Tua Email",
+    "message_placeholder": "Il Tuo Messaggio",
+    "submit_button": "Invia Messaggio",
+    "success_message": "Messaggio inviato con successo!",
+    "error_message": "Qualcosa è andato storto. Per favore, riprova."
+  },
+  "Footer": {
+    "copyright": "Tutti i diritti riservati."
+  }
+}
