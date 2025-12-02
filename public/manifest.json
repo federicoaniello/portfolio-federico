@@ -1,0 +1,16 @@
+{
+  "name": "Federico Aniello - Sviluppatore Front-end",
+  "short_name": "Federico Aniello",
+  "description": "Portfolio di Federico Aniello, uno sviluppatore Front-end appassionato con base in Italia, che crea esperienze digitali pixel-perfect, coinvolgenti e accessibili.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
