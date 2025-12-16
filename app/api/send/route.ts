@@ -8,11 +8,10 @@ export async function POST(req: Request) {
     console.log(process.env.RESEND_API_KEY)
     const body = await req.json();
     const { name, email, message } = body;
-    console.log(body)
     const data = await resend.emails.send({
-      from: '<anything>@zoismarea.resend.app',
+      from: 'email@zoismarea.resend.app',
       to: ['federicoaniello@hotmail.it'],
-      subject: 'New message from your portfolio',
+      subject: 'Nuovo messaggio',
       react: await EmailTemplate({ firstName: name, message }),
       replyTo: email
     });
