@@ -112,7 +112,7 @@ const MainPage = ({ DATA, TRANSLATIONS }: { DATA: any, TRANSLATIONS: any }) => {
                     </div>
                 </section>
 
-                <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+                <section id="contact" className="py-20 bg-linear-to-b from-gray-900 to-gray-800">
                     <div className="container mx-auto px-6 max-w-4xl">
                         <div className="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-2xl">
                             <div className="grid md:grid-cols-2 gap-12">
@@ -131,10 +131,10 @@ const MainPage = ({ DATA, TRANSLATIONS }: { DATA: any, TRANSLATIONS: any }) => {
                                             <span className="font-mono text-sm sm:text-base">{DATA.email}</span>
                                         </a>
                                         <div className="flex gap-4 pt-4">
-                                            <a href={DATA.social.github} target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-all">
+                                            <a href={DATA.social.github} aria-label='Visit my GitHub profile' target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-all">
                                                  <Github size={20} />
                                             </a>
-                                            <a href={DATA.social.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 hover:border-blue-500 transition-all">
+                                            <a href={DATA.social.linkedin} aria-label='Visit my LinkedIn profile' target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 hover:border-blue-500 transition-all">
                                                 <Linkedin size={20} />
                                             </a>
                                         </div>

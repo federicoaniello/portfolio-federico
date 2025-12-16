@@ -40,6 +40,23 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Federico Aniello",
+              "url": "https://portfolio-fa96.netlify.app",
+              "sameAs": [
+                "https://www.linkedin.com/in/federico-aniello/",
+                "https://github.com/AheadAviation"
+              ],
+              "jobTitle": "Sviluppatore Front-end",
+              "description": "Sviluppatore Front-end appassionato con base in Italia, che crea esperienze digitali pixel-perfect, coinvolgenti e accessibili.",
+            })
+          }}
+        />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
