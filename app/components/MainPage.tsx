@@ -1,7 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Github, Linkedin, Mail, Code2, Layers, Zap, Layout } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { faReact, faVuejs , faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import Navbar from './Navbar'
 import Hero from './Hero'
 import SkillCard from './SkillCard'
@@ -63,27 +65,27 @@ const MainPage = ({ DATA, TRANSLATIONS }: { DATA: any, TRANSLATIONS: any }) => {
                                 </h2>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <SkillCard
-                                        icon={Layers}
-                                        title="Vue.js / Nuxt"
+                                        icon={faVuejs}
+                                        title="Vue.js"
                                         level="Intermediate - 3 Years"
                                         color="bg-green-500"
                                     />
                                     <SkillCard
-                                        icon={Layout}
+                                        icon={faAngular}
                                         title="Angular"
                                         level="Intermediate - 2 Years"
                                         color="bg-red-500"
                                     />
                                     <SkillCard
-                                        icon={Code2}
+                                        icon={faReact}
                                         title="React / Next.js"
                                         level="Beginner"
                                         color="bg-blue-500"
                                     />
                                     <SkillCard
-                                        icon={Zap}
+                                        icon={faLayerGroup}
                                         title="Tailwind & TS"
-                                        level="Intermediate"
+                                        level="Beginner"
                                         color="bg-yellow-500"
                                     />
                                 </div>
