@@ -1,9 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 **Note**
-This app requires a RESEND_API_KEY to forward emails. You can put it into .env in this way:
+This app requires a RESEND_API_KEY to forward emails and an EMAIL. You can put it into .env in this way:
 ```
 RESEND_API_KEY=<YOUR_API_KEY_HERE>
+EMAIL=<YOUR_EMAIL_HERE>
 ```
 ## Getting Started
 
