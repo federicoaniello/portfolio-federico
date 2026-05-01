@@ -1,0 +1,35 @@
+{
+    "Header": {
+        "about": "关于我",
+        "skills": "技能",
+        "contact": "联系方式"
+    },
+    "Hero": {
+        "title": "你好，我是 Federico Aniello",
+        "subtitle": "前端开发工程师",
+        "description": "我致力于构建美观且功能强大的 Web 体验。在这一领域拥有超过 4 年的经验，我擅长创建现代、响应式和以用户为中心的 Web 应用程序。",
+        "contact_button": "联系我"
+    },
+    "About": {
+        "title": "关于我",
+        "paragraph1": "我是一名充满热情的前端开发人员，非常注重创建优雅且高效的用户界面。我的 Web 开发之旅始于 4 年多前，从那时起，我一直致力于学习和掌握现代 Web 技术。",
+        "paragraph2": "我在基于组件的框架方面拥有丰富的经验，包括 3 年的 Vue 经验和 2 年的 Angular 经验。这些背景使我对状态管理、组件架构和构建可扩展应用程序有了深刻的理解。",
+        "paragraph3": "我喜欢解决复杂的问题并将想法变为现实。我总是渴望迎接新的挑战，并与团队合作构建令人惊叹的产品。"
+    },
+    "Skills": {
+        "title": "我的技能"
+    },
+    "Contact": {
+        "title": "联系我",
+        "description": "有项目想法或者只是想打个招呼？请填写下方的表格，我会尽快回复您。",
+        "name_placeholder": "你的名字",
+        "email_placeholder": "你的邮箱",
+        "message_placeholder": "你的留言",
+        "submit_button": "发送消息",
+        "success_message": "消息发送成功！",
+        "error_message": "出现了一些问题，请重试。"
+    },
+    "Footer": {
+        "copyright": "版权所有。"
+    }
+}

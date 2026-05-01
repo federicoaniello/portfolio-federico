@@ -4,10 +4,28 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Federico Aniello | Front-end Developer",
-  description: "Federico Aniello's personal portfolio.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Federico Aniello | Front-end Developer";
+  const descriptions: Record<string, string> = {
+    en: "Federico Aniello's personal portfolio. I build beautiful and functional web experiences.",
+    it: "Portfolio personale di Federico Aniello. Sviluppatore Front-end.",
+    de: "Federico Aniellos persönliches Portfolio. Front-End-Entwickler.",
+    ru: "Личное портфолио Федерико Аньелло. Фронтенд-разработчик.",
+    zh: "Federico Aniello 的个人作品集。前端开发人员。"
+  };
+
+  return {
+    title,
+    description: descriptions[locale] || descriptions.en,
+    openGraph: {
+      title,
+      description: descriptions[locale] || descriptions.en,
+      type: "website",
+      locale: locale,
+    }
+  };
+}
 
 // Modifica qui la definizione dei tipi e degli argomenti
 export default async function LocaleLayout({
@@ -19,8 +37,8 @@ export default async function LocaleLayout({
 }) {
   // Attendi i parametri qui
   const { locale } = await params;
-  
-  const messages = await getMessages({locale});
+
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>

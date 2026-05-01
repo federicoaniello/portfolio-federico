@@ -13,7 +13,7 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -36,12 +36,14 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-800">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-white mb-4">{t('title')}</h2>
-        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-12">{t('description')}</p>
-        
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
+    <section id="contact" className="relative py-24 bg-gray-900 border-t border-gray-800">
+      <div className="absolute right-0 bottom-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-[120px] opacity-20 pointer-events-none"></div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 mb-4 drop-shadow-sm">{t('title')}</h2>
+        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-16 text-lg">{t('description')}</p>
+
+        <form onSubmit={handleSubmit} className="max-w-xl mx-auto bg-gray-800/40 backdrop-blur-xl p-8 rounded-3xl border border-gray-700/50 shadow-2xl">
           <div className="mb-6">
             <input
               type="text"
@@ -50,7 +52,7 @@ export default function ContactForm() {
               onChange={(e) => setName(e.target.value)}
               placeholder={t('name_placeholder')}
               required
-              className="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-5 py-4 bg-gray-900/50 text-white border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all placeholder-gray-500"
             />
           </div>
           <div className="mb-6">
@@ -61,10 +63,10 @@ export default function ContactForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('email_placeholder')}
               required
-              className="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-5 py-4 bg-gray-900/50 text-white border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all placeholder-gray-500"
             />
           </div>
-          <div className="mb-6">
+          <div className="mb-8">
             <textarea
               id="message"
               rows={5}
@@ -72,14 +74,14 @@ export default function ContactForm() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder={t('message_placeholder')}
               required
-              className="w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-5 py-4 bg-gray-900/50 text-white border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all placeholder-gray-500 resize-none"
             ></textarea>
           </div>
           <div className="text-center">
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               disabled={status === 'loading'}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors disabled:bg-gray-500 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(59,130,246,0.5)] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {status === 'loading' ? 'Sending...' : t('submit_button')}
             </button>
@@ -87,10 +89,14 @@ export default function ContactForm() {
         </form>
 
         {status === 'success' && (
-          <p className="text-center text-green-400 mt-6">{t('success_message')}</p>
+          <div className="max-w-xl mx-auto mt-8 p-4 bg-emerald-900/30 border border-emerald-500/30 rounded-xl text-center">
+            <p className="text-emerald-400 font-medium">{t('success_message')}</p>
+          </div>
         )}
         {status === 'error' && (
-          <p className="text-center text-red-400 mt-6">{t('error_message')}</p>
+          <div className="max-w-xl mx-auto mt-8 p-4 bg-red-900/30 border border-red-500/30 rounded-xl text-center">
+            <p className="text-red-400 font-medium">{t('error_message')}</p>
+          </div>
         )}
       </div>
     </section>

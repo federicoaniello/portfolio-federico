@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import React from 'react';
 import EmailTemplate from '@/components/EmailTemplate';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -21,8 +22,8 @@ export async function POST(request: Request) {
       from: 'Portfolio Contact <onboarding@resend.dev>', // Must be from a domain you own/verified with Resend
       to: emailTo,
       subject: 'New Message from your Portfolio',
-      reply_to: email,
-      react: EmailTemplate({ name, email, message }),
+      replyTo: email,
+      react: EmailTemplate({ name, email, message }) as React.ReactElement,
     });
 
     if (error) {

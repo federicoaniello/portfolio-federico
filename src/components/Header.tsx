@@ -19,7 +19,7 @@ export default function Header() {
       router.replace(newPath);
     });
   };
-  
+
   // Extract the current locale from the pathname
   const currentLocale = pathname.split('/')[1] || 'en';
 
@@ -41,6 +41,9 @@ export default function Header() {
           >
             <option value="en" className="bg-gray-800">EN</option>
             <option value="it" className="bg-gray-800">IT</option>
+            <option value="de" className="bg-gray-800">DE</option>
+            <option value="ru" className="bg-gray-800">RU</option>
+            <option value="zh" className="bg-gray-800">ZH</option>
           </select>
         </div>
       </div>

@@ -1,0 +1,35 @@
+{
+    "Header": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "contact": "Kontakt"
+    },
+    "Hero": {
+        "title": "Hallo, ich bin Federico Aniello",
+        "subtitle": "Front-end Entwickler",
+        "description": "Ich erstelle wunderschöne und funktionale Web-Erlebnisse. Mit über 4 Jahren Erfahrung in diesem Bereich bin ich spezialisiert auf die Erstellung moderner, responsiver und benutzerzentrierter Webanwendungen.",
+        "contact_button": "Kontakt aufnehmen"
+    },
+    "About": {
+        "title": "Über mich",
+        "paragraph1": "Ich bin ein leidenschaftlicher Front-End-Entwickler mit einem starken Fokus auf die Erstellung eleganter und effektiver Benutzeroberflächen. Meine Reise in der Webentwicklung begann vor über 4 Jahren, und seitdem widme ich mich dem Erlernen und Meistern moderner Webtechnologien.",
+        "paragraph2": "Ich verfüge über umfangreiche Erfahrung mit komponentenbasierten Frameworks, darunter 3 Jahre mit Vue und 2 Jahre mit Angular. Dieser Hintergrund hat mir ein tiefes Verständnis für State Management, Komponentenarchitektur und die Entwicklung skalierbarer Anwendungen verliehen.",
+        "paragraph3": "Es bereitet mir große Freude, komplexe Probleme zu lösen und Ideen in die Realität umzusetzen. Ich bin immer bestrebt, neue Herausforderungen anzunehmen und mit Teams zusammenzuarbeiten, um fantastische Produkte zu entwickeln."
+    },
+    "Skills": {
+        "title": "Meine Fähigkeiten"
+    },
+    "Contact": {
+        "title": "Kontaktiere mich",
+        "description": "Haben Sie ein Projekt im Sinn oder möchten Sie einfach nur Hallo sagen? Füllen Sie das untenstehende Formular aus und ich werde mich so schnell wie möglich bei Ihnen melden.",
+        "name_placeholder": "Ihr Name",
+        "email_placeholder": "Ihre E-Mail",
+        "message_placeholder": "Ihre Nachricht",
+        "submit_button": "Nachricht senden",
+        "success_message": "Nachricht erfolgreich gesendet!",
+        "error_message": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+    },
+    "Footer": {
+        "copyright": "Alle Rechte vorbehalten."
+    }
+}
